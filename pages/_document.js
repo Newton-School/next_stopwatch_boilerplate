@@ -1,13 +1,20 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
-export default function Document() {
+const MyDocument = () => {
   return (
-    <Html lang="en">
-      <Head />
+    <Html lang='en'>
+      <Head>
+        <link
+          rel='stylesheet'
+          href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap'
+        />
+      </Head>
       <body>
         <Main />
         <NextScript />
       </body>
     </Html>
-  )
-}
+  );
+};
+
+export default MyDocument;
